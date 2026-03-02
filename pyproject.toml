@@ -14,7 +14,7 @@
 ## Steps to create a python project
 ## 1. Create .toml file in the project root dir
 ## 2. In the project envirnoment: ```pip install -e .```
-## 3. This should create cbc_2026_jan.dist-info file in the venv/lib/python3/site-packages 
+## 3. This should create CBC_FiniteSensor_Models.dist-info file in the venv/lib/python3/site-packages 
 ## -------------------------------
 
 ##-------------------------------------------------------------##
@@ -24,9 +24,9 @@ build-backend = "setuptools.build_meta"                         ## setuptools is
 
 ##-------------------------------------------------------------##
 [project]
-name = "cbc_2026_jan"                                           ## (Doesnot have to match folder name) The name used when this project is installed into a venv
+name = "CBC_FiniteSensor_Models"                                ## (Doesnot have to match folder name) The name used when this project is installed into a venv
 version = "0.1.0"                                               ## Project version for reproducibility and releases
-description = "CBC 2026 January simulation and source code"     ## Short human-readable description
+description = "CBC 2026 March simulation and source code"       ## Short human-readable description
 requires-python = ">=3.9"                                       ## Minimum Python version required        
 
 ##-------------------------------------------------------------##

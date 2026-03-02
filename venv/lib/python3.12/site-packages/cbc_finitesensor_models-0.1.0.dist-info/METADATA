@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: CBC_FiniteSensor_Models
+Version: 0.1.0
+Summary: CBC 2026 March simulation and source code
+Requires-Python: >=3.9
