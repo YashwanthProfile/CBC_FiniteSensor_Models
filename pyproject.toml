@@ -1,0 +1,38 @@
+## -------------------------------
+## pyproject.toml
+## -------------------------------
+## This file tells Python and pip:
+## 1. How to build this project
+## 2. What the project is called
+## 3. Where the source code lives
+## 4. What Python version it requires
+##
+## >> Basically allows imports from different dir levels
+##
+## It is read by pip, VS Code, pytest, build tools, etc.
+## 
+## Steps to create a python project
+## 1. Create .toml file in the project root dir
+## 2. In the project envirnoment: ```pip install -e .```
+## 3. This should create cbc_2026_jan.dist-info file in the venv/lib/python3/site-packages 
+## -------------------------------
+
+##-------------------------------------------------------------##
+[build-system]
+requires = ["setuptools>=61"]                                   ## These packages are needed to install this project
+build-backend = "setuptools.build_meta"                         ## setuptools is the backend that knows how to build/install the project
+
+##-------------------------------------------------------------##
+[project]
+name = "cbc_2026_jan"                                           ## (Doesnot have to match folder name) The name used when this project is installed into a venv
+version = "0.1.0"                                               ## Project version for reproducibility and releases
+description = "CBC 2026 January simulation and source code"     ## Short human-readable description
+requires-python = ">=3.9"                                       ## Minimum Python version required        
+
+##-------------------------------------------------------------##
+[tool.setuptools]                                               ## This tells setuptools where to find the importable packages
+packages = ["src"]                                              ## If you use a src/ layout, this must point to "src"
+
+# If you instead store code directly in the root, use:
+# packages = ["."]
+##-------------------------------------------------------------##
